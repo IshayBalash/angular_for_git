@@ -1,0 +1,11 @@
+table{
+    border:1px;
+    text-align: center;
+    position: relative;
+    left:500px;
+}
+.head{
+    color: brown;
+    text-align: center;
+    font-weight: bold
+}

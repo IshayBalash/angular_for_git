@@ -1,0 +1,19 @@
+<table border="1">
+    <tr class="head">
+    <td >diameter</td>
+    <td >slices</td>
+    <td >toppings</td>
+    <td >price</td>
+ </tr>
+ <tr *ngFor="let i of pizzalist,let j=index">
+     <td *ngIf="j%2 == 0" style=background-color:cyan>{{i.diameter}}</td>
+     <td *ngIf="j%2 != 0" style=background-color:green>{{i.diameter}}</td>
+     <td *ngIf="j%2 == 0" style=background-color:cyan>{{i.slices}}</td>
+     <td *ngIf="j%2 != 0" style=background-color:green>{{i.slices}}</td>
+     <td *ngIf="j%2 == 0" style=background-color:cyan>{{i.toppings}}</td>
+     <td *ngIf="j%2 != 0" style=background-color:green>{{i.toppings}}</td>    
+     <td *ngIf="j%2 == 0" style=background-color:cyan>{{i.price}}</td>
+     <td *ngIf="j%2 != 0" style=background-color:green>{{i.price}}</td>    
+ </tr>
+    
+</table>

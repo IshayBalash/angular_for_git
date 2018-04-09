@@ -1,0 +1,18 @@
+
+<h1>movie list</h1>
+<div id="div1" *ngFor="let i of movie_list,let j=index">
+  <label>{{j+1}}</label>
+  <button type="button" class="btn btn-success" (click)="initSelectedBook(i.id)">{{i.movie_name}}</button>
+ 
+</div>
+
+
+
+  
+  <div id="div2" *ngIf="selected_movie">
+      <h3>movie_data:</h3>
+    <h4>name:{{selected_movie.movie_name}}</h4>
+    <h4>price:{{selected_movie.price}}</h4>
+    <h4>date:{{selected_movie.movie_date}}</h4>
+    <button (click)="clearMovieData()">clear data</button>
+</div>
