@@ -1,0 +1,5 @@
+<h1>movie list</h1>
+<div id="div1" *ngFor="let i of movie_list,let j=index">
+  <label>{{j+1}}</label>
+  <button type="button" class="btn btn-success" (click)="initSelectedBook(i.id)">{{i.movie_name}}</button> 
+</div>

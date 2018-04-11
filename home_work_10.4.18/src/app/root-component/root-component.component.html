@@ -1,0 +1,7 @@
+<div id=full_app>
+<app-child1 (transfermovie)="init_selected_movie_from_child1($event)" ></app-child1>
+<div *ngIf="show_movie_info">
+<app-child2 [movie_info]="selected_movie" ></app-child2>
+<button (click)="clearMovieData()">clear data</button>
+</div>
+</div>
