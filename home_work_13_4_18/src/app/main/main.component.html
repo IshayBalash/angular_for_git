@@ -1,0 +1,26 @@
+<div id=main>
+<div>
+  <h1 id="headline">find your veg</h1><hr>
+  <label> Serch for:</label>
+  <input type="text" [(ngModel)]="user_input">
+  <button (click)="submit()">search</button>
+  <button (click)="show_add_veg_div()">add veg of your own </button>
+  <button *ngIf="show_div_2"  (click)="clear_data()">clear data</button>
+  </div>
+
+
+<div *ngIf="add_veg">
+  <h2>help us collect all the veg</h2>
+  <h3> if you didnt find your veg add it to the list</h3>
+  <input type="text" [(ngModel)]="user_veg">
+  <button (click)="add_user_veg()">add veg</button>
+  <button (click)="hide_user_veg()">hide</button>
+</div>
+
+<div *ngIf="show_div_2">
+  <ul>
+    <li *ngFor="let i of veg_list">{{i}}</li>
+  </ul>
+</div>
+
+</div>

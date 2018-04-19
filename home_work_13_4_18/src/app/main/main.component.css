@@ -1,0 +1,10 @@
+#headline{
+    position: relative;
+    left: 100px;
+    display:inline;
+    background-color:#80ff00 
+}
+#main{
+    position: absolute;
+    left: 30%;
+}
