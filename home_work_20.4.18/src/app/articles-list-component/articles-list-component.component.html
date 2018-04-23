@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="rwo">
+        <div class="col-sm-3" *ngFor="let i of [0,1,2,3]">
+            <button (click)="set_index_arr(i)" class="info"> {{Articel_list[i].article_type}}</button>
+        </div>
+    </div>
+    
+    <div class="rwo">
+            <div class="col-sm-3" *ngFor="let i of [0,1,2,3]">
+                <br>
+            </div>
+        </div>
+    
+
+    <div class="rwo">
+            <div class="col-sm-3" *ngFor="let i of [4,5,6,7]">
+                <button (click)="set_index_arr(i)" class="info"> {{Articel_list[i].article_type}}</button>
+            </div>
+        </div>
+</div>
+
+<br>
+<br>
+
+<app-article-info-component *ngIf="show_articel_info" [articelnum]="IndexNum" (HideEmitterVoid)="hide_articel_info($event)" ></app-article-info-component>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+
+
+
+<h2> article info said:{{Article_index}}</h2>
+<table id="customers">
+        <tr>
+          <th><h4>artical type</h4></th>
+          <th><h4> author</h4></th>         
+          <th><h4>score</h4></th>
+        </tr>
+        <tr>
+            <td>{{Articel_list[articelnum].article_type}}</td>
+            <td>{{Articel_list[articelnum].author_display}}</td>
+            <td>{{Articel_list[articelnum].score}}</td>       
+        </tr>
+      </table>
+
+      <button (click)="hide_info()" class="btn btn-primary">hide info</button>
+    
