@@ -1,0 +1,16 @@
+<div class="person info" *ngIf="personInfo.id">
+    <h2>first name:{{personInfo.first_name}}</h2>
+    <h2>last name:{{personInfo.last_name}}</h2>
+    <h2>full name:{{personInfo.first_name}}&nbsp;{{personInfo.last_name}} </h2>
+    <img [src]="personInfo.avatar" >
+    <a routerLink="/list">back to main page</a>
+
+</div>
+
+<div class="person info" *ngIf="!personInfo.id">
+<h2>no person has been chosen</h2>        
+</div>
+    
+ 
+
+

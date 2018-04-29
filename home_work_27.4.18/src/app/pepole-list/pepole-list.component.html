@@ -1,0 +1,11 @@
+
+<div class="container-fluid">
+        <div class="rwo">
+            <h1>Welcome to Ajex Request: </h1>
+            <div class="col-sm-4 pic " *ngFor="let i of InfoFromUrl.data">
+                <img [src]="i.avatar">
+                <br>
+                <a routerLink="/person"(click)="setPepoleChoiseInService(i)">click for full data</a>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,10 @@
+img{
+    border-radius: 50%;
+}
+
+.person info{
+    width:100px;
+    height:100px;
+    background-color: aquamarine;
+    margin: 0 auto;
+}
