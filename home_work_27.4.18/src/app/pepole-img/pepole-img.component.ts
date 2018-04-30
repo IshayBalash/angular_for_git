@@ -8,10 +8,8 @@ import {UrlInfoservice} from "../shared/services/PepoleList.service"
   styleUrls: ['./pepole-img.component.css']
 })
 export class PepoleImgComponent implements OnInit {
-  img:{}
   personInfo:{}
   constructor(private myUrlInfoService:UrlInfoservice){
-    this.img=this.myUrlInfoService.image
     this.personInfo=this.myUrlInfoService.PersonData
    }
 
